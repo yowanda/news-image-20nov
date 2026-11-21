@@ -1,19 +1,24 @@
 # SPDX-License-Identifier: MIT
-"""Entry for make.fun news-image-20261120 (round 3).
+"""Entry for make.fun news-image-20261120 (round 4).
 
 Copies the pre-built image ``entry.png`` to the output directory as
 ``entry.png``. The image is a one-page newspaper collage summing up
 Friday 20 November 2026: a date header, six captioned feature panels
 (Kyiv bridges hit, Cyclone Akvan, UK-EU deal, AI sell-off, Shenzhen
-summit, World Court ruling) and 30 further headlines across 8 regions,
-36 stories in total.
+summit, World Court ruling) and 32 further headlines across 8 regions,
+38 stories in total.
 
-Round 3 changes vs round 2 (30 stories, 7 regions): the UK-EU deal
-was promoted to a feature panel, Riyadh moved to the grid, duplicates
-were removed, Gaza was re-tagged (WED), and 7 new verified stories
-were added (Moldova airspace, Ukraine oil strikes, Haiti raid,
-Somalia-UAE expulsion, Nvidia SEC probe, global-markets correction,
-tech rout, Japan quake, Cyclone Xavier, Van Gogh record sale).
+Round 4 changes vs round 3 (36 stories, commit 48a45ef): two new
+verified Friday stories added to the grid -- Iraq (troops enter the
+Kataib Hezbollah stronghold of Jurf al-Sakhar under a deal on oil
+smuggling, Reuters) and Korea cholera (first case in 10 years,
+Changwon patient, no overseas travel, AP/KDCA). The image is built
+by ``work/build_entry_r4.py`` (kept out of git by .gitignore, as in
+rounds 2-3); layout re-fit for the extra grid row (panels 136 px,
+grid rows stay 41 px); all other stories, feature captions and the
+6-panel base image are unchanged from round 3. Round-4 fact checks: Japan quake "2 injured"
+confirmed (JMA/Kyodo); AI sell-off figures confirmed (WSJ/Reuters/
+CNN: Nasdaq -5.3%, Anthropic -9%, Nvidia -14%, VIX +33% to 37).
 
 Deterministic: the same bytes are written on every run. The program
 needs no network and reads only the image shipped in this repository.
